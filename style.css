@@ -81,6 +81,15 @@ body {
     
     .hero .navigation {
         display: flex;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+        margin-top: 0;
+        width: 100%;
+        position: relative;
+        margin-left: -0.05em;
+        margin-right: -0.05em;
     }
 }
 
@@ -163,9 +172,10 @@ body {
     .navigation {
         height: auto;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-between;
         gap: 2rem;
         margin-top: 0;
+        width: 100%;
     }
     
     .tagline {
