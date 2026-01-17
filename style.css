@@ -1,0 +1,141 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.4;
+    color: #000;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Layout */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4rem;
+    align-items: stretch;
+    width: 100%;
+}
+
+/* Hero section */
+.hero {
+    display: block;
+    width: 100%;
+}
+
+.name {
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(2 * clamp(2rem, 6vw, 4rem) * 1);
+    align-items: flex-start;
+    padding-top: 0;
+    margin-top: -0.1em;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: #999;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.navigation a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.navigation a:hover {
+    color: #666;
+}
+
+/* Now page specific */
+.back-nav {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e6e6e6;
+}
+
+.back-nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-nav a:hover {
+    color: #666;
+}
+
+.now-content h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    margin-bottom: 2rem;
+    font-weight: 900;
+    text-transform: none;
+    letter-spacing: -0.03em;
+    line-height: 1;
+}
+
+.now-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.updated {
+    margin-top: 3rem !important;
+    color: #666 !important;
+    font-size: 0.9rem !important;
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 3rem 1.5rem;
+    }
+    
+    .name {
+        font-size: clamp(1.5rem, 8vw, 2.5rem);
+        margin-bottom: 1rem;
+    }
+    
+    .info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .navigation {
+        gap: 1rem;
+    }
+}
