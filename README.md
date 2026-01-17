@@ -1,5 +1,3 @@
-# asiliskender.com
-
 A minimal landing page for asiliskender.com
 
 ## What's here
