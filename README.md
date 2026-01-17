@@ -8,5 +8,3 @@ A minimal landing page for asiliskender.com
 - Ready for GitHub Pages
 
 Built with vanilla HTML/CSS.
-
----
