@@ -2,8 +2,8 @@ const scrambleText = () => {
     const element = document.querySelector('.scramble');
     if (!element) return;
     
-    const originalText = 'ASILİSKENDER';
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZİĞÜŞÖÇ';
+    const originalText = 'asiliskender';
+    const chars = 'abcdefghijklmnopqrstuvwxyzığüşöç';
     let iterations = 0;
     
     // Store original width to prevent layout shift

@@ -28,7 +28,7 @@ body {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 4rem;
-    align-items: stretch;
+    align-items: start;
     width: 100%;
 }
 
@@ -39,12 +39,12 @@ body {
 }
 
 .name {
-    font-size: clamp(2rem, 6vw, 4rem);
+    font-size: clamp(2rem, 10vw, 8rem);
     font-weight: 900;
     letter-spacing: -0.03em;
     line-height: 1;
     color: #000;
-    text-transform: uppercase;
+    text-transform: lowercase;
     margin-bottom: 0.5rem;
     cursor: pointer;
     user-select: none;
@@ -64,10 +64,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(2 * clamp(2rem, 6vw, 4rem) * 1);
+    height: calc(clamp(2rem, 10vw, 8rem));
     align-items: flex-start;
     padding-top: 0;
-    margin-top: -0.1em;
+    margin-top: 0;
 }
 
 /* Desktop: navigation is in grid, hide the one inside hero */
@@ -148,7 +148,7 @@ body {
 }
 
 .now-content h1 {
-    font-size: clamp(2rem, 6vw, 4rem);
+    font-size: clamp(2rem, 10vw, 8rem);
     margin-bottom: 2rem;
     font-weight: 900;
     text-transform: none;
