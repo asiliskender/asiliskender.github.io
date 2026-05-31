@@ -121,6 +121,21 @@ body {
     margin: -0.2em -0.4em;
 }
 
+.navigation .nav-disabled {
+    color: #000;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: default;
+    padding: 0.2em 0.4em;
+    margin: -0.2em -0.4em;
+    transition: all 0.2s ease;
+}
+
+.navigation .nav-disabled:hover {
+    color: #000;
+    background-color: #000;
+}
+
 .navigation a:hover {
     color: #fff;
     background-color: #000;
